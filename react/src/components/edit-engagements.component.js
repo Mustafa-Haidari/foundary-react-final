@@ -68,32 +68,32 @@ const EditEngagement = props => {
     <div>
         <h1>This is components</h1>
         <div className="submit-form">
-                <div className="form-group">
-                    <label>Name:</label>
+                <div className="form-group mb-3">
+                    <label>Name:</label><br/>
                     <input type="text" name="name" value={currentEngagement.name}
                 onChange={updateProperties} placeholder="name" className="editValue" required/>
                 </div>
 
-                <div className="form-group">
-                    <label>Description</label>
+                <div className="form-group mb-3">
+                    <label>Description</label><br/>
                     <input type="text" name="description" value={currentEngagement.description}
                 onChange={updateProperties} placeholder="description" className="editValue" required/>
                 </div>
 
-                <div className="form-group">
-                    <label>Started</label>
+                <div className="form-group mb-3">
+                    <label>Started</label><br/>
                     <input type="Date" name="started" value={currentEngagement.started}
                 onChange={updateProperties} placeholder="started" className="editValue" required/>
                 </div>
 
-                <div className="form-group">
-                    <label>Ended</label>
+                <div className="form-group mb-3">
+                    <label>Ended</label><br/>
                     <input type="Date" name="ended" value={currentEngagement.ended}
                 onChange={updateProperties} placeholder="ended" className="editValue" required/>
                 </div>
 
-                <div className="form-group">
-                  <label>Employee</label>
+                <div className="form-group mb-3">
+                  <label>Employee</label><br/>
                   <select name="employee" value={currentEngagement.employee} {...register("employee")} onChange={updateProperties}>
                         {
                             employees.map(employee => {
@@ -103,9 +103,9 @@ const EditEngagement = props => {
                     </select>
                 </div>
 
-                <div className="form-group">
+                <div className="form-group mb-4">
 
-                    <label>Client</label>
+                    <label>Client</label><br/>
                     <select name="client" value={currentEngagement.client} {...register("client")} onChange={updateProperties}>
                         {
                             clients.map(client => {

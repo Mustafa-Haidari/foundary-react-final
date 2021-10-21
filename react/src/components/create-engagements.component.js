@@ -94,7 +94,7 @@ export default function CreateEngagement() {
                     </select>
                 </div>
 
-                <div className="form-group mb-3">
+                <div className="form-group mb-4">
 
                     <label>Client</label><br/>
                     <select name="client" {...register("client")}>

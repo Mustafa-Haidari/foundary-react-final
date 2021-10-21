@@ -23,12 +23,14 @@ const CreateEmployee = props => {
 
      return (
     <div>
+    <h3>Edit {currentName}</h3>
       <div className="submit-form">
           <div>
             <div className="form-group">
-              <label>Edit Employee</label>
+              <label>Edit Employee</label><br/>
               <input type="text" name="name" value={currentName}
-                onChange={(e) => setCurrentName(e.target.value)} placeholder="Enter user" className="editValue" required/>
+                onChange={(e) => setCurrentName(e.target.value)} 
+                placeholder="Enter user" className="editValue" required/><br/><br/>
                <button onClick={updateEmployee} className="btn btn-success">Submit</button>
             </div>
           </div>

@@ -22,17 +22,19 @@ const CreateClient = props => {
   };
 
      return (
-    <div>
-      <div className="submit-form">
-          <div>
-            <div className="form-group">
-              <label htmlFor="name">Edit Client</label>
-              <input type="text" name="name" value={currentName}
-                onChange={(e) => setCurrentName(e.target.value)} placeholder="Enter user" className="editValue" required/>
-               <button onClick={updateClient} className="btn btn-success">Submit</button>
+      <div>
+        <h3>Edit {currentName}</h3><br/>
+        <div className="submit-form">
+            <div>
+              <div className="form-group">
+                <label htmlFor="name">Client Name</label><br/>
+                <input type="text" name="name" value={currentName}
+                  onChange={(e) => setCurrentName(e.target.value)} 
+                  placeholder="Enter user" className="editValue" required/><br/><br/>
+                <button onClick={updateClient} className="btn btn-success">Submit</button>
+              </div>
             </div>
-          </div>
-      </div>
+        </div>
 
     </div>
   )

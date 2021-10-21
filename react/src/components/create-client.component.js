@@ -43,7 +43,8 @@ const CreateClient = props => {
           <div>
             <div className="form-group">
               <label for="name">Client Name</label><br/>
-                    <input type="text" id="name" name="name" {...register("name")} placeholder=""/><br/><br/>
+                    <input type="text" id="name" name="name" 
+                    {...register("name")} placeholder=""/><br/><br/>
             </div>
                 <button type="submit" className="btn btn-primary btn__style" value="Submit">Submit</button>
           </div>
