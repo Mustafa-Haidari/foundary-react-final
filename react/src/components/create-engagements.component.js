@@ -13,7 +13,7 @@ export default function CreateEngagement() {
         id: '',
         name: '',
         description: '',
-        started: Date,
+        started: Date.now,
         ended: Date,
         client: '',
         employee: ''
@@ -73,15 +73,15 @@ export default function CreateEngagement() {
                     <input size="20" type="text"name="description" {...register("description")} placeholder=""/>
                 </div>
 
-                <div className="form-group mb-3">
+                {/* <div className="form-group mb-3">
                     <label>Started</label><br/>
                     <input type="date" format="dd-mm-yyyy" min="01-01-1997" max="12-31-2030" name="started" {...register("started")} placeholder=""/>
-                </div>
+                </div> */}
 
-                <div className="form-group mb-3">
+                {/* <div className="form-group mb-3">
                     <label>Ended</label><br/>
                     <input type="date" format="dd-mm-yyyy" min="01-01-1997" max="12-31-2030" name="ended" {...register("ended")} placeholder=""/>
-                </div>
+                </div> */}
 
                 <div className="form-group mb-3">
                     <label>Employee</label><br/>

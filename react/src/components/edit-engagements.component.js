@@ -86,11 +86,11 @@ const EditEngagement = props => {
                 onChange={updateProperties} placeholder="started" className="editValue" required/>
                 </div>
 
-                <div className="form-group mb-3">
+                {/* <div className="form-group mb-3">
                     <label>Ended</label><br/>
                     <input type="Date" name="ended" value={currentEngagement.ended}
                 onChange={updateProperties} placeholder="ended" className="editValue" required/>
-                </div>
+                </div> */}
 
                 <div className="form-group mb-3">
                   <label>Employee</label><br/>
