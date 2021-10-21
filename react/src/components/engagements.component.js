@@ -39,11 +39,21 @@ const ClientList = props => {
     return (
         <div>
             <h3>Engagement list</h3>
+
             
-            <Link to="/engagements/create" className="btn btn-primary btn__style">Create engagements<i className="fas fa-plus"></i></Link>
+
             
-            <lable>Search by name </lable>
-                <input type="text" onChange={(e) => setSearchTerm(e.target.value)}/>
+            <div className="top-container-wrapper">
+                <div className="top-container top-container-btn">
+                    <Link to="/engagements/create" className="btn btn-primary btn__style">Create new engagements<i className="fas fa-plus"></i></Link>
+                </div>
+                <div className="top-container top-container-search">
+                    <lable>Search by name </lable>
+                    <input type="text" onChange={(e) => setSearchTerm(e.target.value)}/>
+                </div>
+            </div>
+
+
             <table className="table">
                 <thead className="table-light">
                     <tr>

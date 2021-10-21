@@ -46,11 +46,15 @@ export default function ClientList() {
 <div className="">
 
 <h3>Client list</h3>
-            <Link to="/clients/create" className="btn btn-primary btn__style">Create client<i className="fas fa-plus"></i></Link>
-            
-                <lable>Search by name </lable>
-                <input type="text" onChange={(e) => setSearchTerm(e.target.value)}/>
-
+            <div className="top-container-wrapper">
+                <div className="top-container top-container-btn">
+                    <Link to="/clients/create" className="btn btn-primary btn__style">Create client<i className="fas fa-plus"></i></Link>
+                </div>
+                <div className="top-container top-container-search">
+                    <lable>Search by name </lable>
+                    <input type="text" onChange={(e) => setSearchTerm(e.target.value)}/>
+                </div>
+            </div>
                 
             <table className="table">
                 <thead className="table-light">

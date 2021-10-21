@@ -41,10 +41,16 @@ const ClientList = props => {
         <div>
             <h3>Employee list</h3>
 
-                <Link to="/employees/create" className="btn btn-primary btn__style">Create employee</Link>
             
-                <lable>Search by name </lable>
-                <input type="text" onChange={(e) => setSearchTerm(e.target.value)}/>
+            <div className="top-container-wrapper">
+                <div className="top-container top-container-btn">
+                    <Link to="/employee/create" className="btn btn-primary btn__style">Create employee<i className="fas fa-plus"></i></Link>
+                </div>
+                <div className="top-container top-container-search">
+                    <lable>Search by name </lable>
+                    <input type="text" onChange={(e) => setSearchTerm(e.target.value)}/>
+                </div>
+            </div>
             
             <table className="table">
                 <thead className="table-light">
