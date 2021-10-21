@@ -44,7 +44,7 @@ const ClientList = props => {
             
             <div className="top-container-wrapper">
                 <div className="top-container top-container-btn">
-                    <Link to="/employee/create" className="btn btn-primary btn__style">Create employee<i className="fas fa-plus"></i></Link>
+                    <Link to="/employees/create" className="btn btn-primary btn__style">Create employee<i className="fas fa-plus"></i></Link>
                 </div>
                 <div className="top-container top-container-search">
                     <lable>Search by name </lable>
