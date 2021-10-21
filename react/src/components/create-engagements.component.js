@@ -42,8 +42,8 @@ export default function CreateEngagement() {
     }, []);
 
     const onSubmit = (data) => {
-
-        axios.post('http://localhost:5000/engagements', data)
+        console.log(data)
+        axios.post('http://localhost:5000/engagements/', data)
         .then(response => {
             setEngagements(response.data);
             console.log(data)
@@ -86,6 +86,7 @@ export default function CreateEngagement() {
                 <div className="form-group mb-3">
                     <label>Employee</label><br/>
                     <select name="employee" {...register("employee")}>
+                        <option></option>
                         {
                             employees.map(employee => {
                                 return <option key={employee.id} value={employee.name}>{employee.name}</option>
@@ -98,6 +99,7 @@ export default function CreateEngagement() {
 
                     <label>Client</label><br/>
                     <select name="client" {...register("client")}>
+                        <option></option>
                         {
                             clients.map(client => {
                                 return <option key={client.id} value={client.name}>{client.name}</option>
